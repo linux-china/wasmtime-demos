@@ -8,3 +8,6 @@ build:
 
 test:
     wasmtime pkg/markdown.wasm --invoke render "demo"
+
+debug:
+   /usr/local/opt/llvm/bin/lldb -- wasmtime -g pkg/markdown.wasm --invoke render "demo"
