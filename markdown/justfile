@@ -5,3 +5,6 @@ wasm-pack-install:
 
 build:
     wasm-pack build
+
+test:
+    wasmtime pkg/markdown.wasm --invoke render "demo"
